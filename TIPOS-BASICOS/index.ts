@@ -44,3 +44,46 @@ myNameV3('Fonseca');
 // Array
 const names: string[] = []
 const namesV2: Array<string> = []	
+names.push('Jarlin' )
+
+// Object o Records
+const myObject: Object = {
+    name: 'Jarlin',
+}
+
+const myObjectV1: Record<string, any> = {}
+myObjectV1.name = 'Jarlin';
+myObjectV1.age = 23;
+
+
+const myObjectV2: {name: string, age: number} = {
+    name: 'Jarlin',
+    age: 23
+}
+
+//Tuplas
+const myObjectV3: Record<string, string | number> = {}
+myObjectV3.name = 'Jarlin';
+myObjectV3.age = 23;
+
+
+//Promise
+const myPromise = async (): Promise<string> =>{
+  return await new Promise((res, _rej) => {
+        setTimeout(() => {
+            res('Hola Mundo')
+        }, 2000);
+    });
+};
+
+ myPromise().then((res) => console.log(res))
+
+
+ // Compuestos
+ const myNewObject: {
+    name: string,
+    age: number 
+} = {
+    name: 'Jarlin',
+    age: 23
+}
